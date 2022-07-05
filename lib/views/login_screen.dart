@@ -9,6 +9,7 @@ class LoginScreen extends StatefulWidget {
 
 class _LoginScreenState extends State<LoginScreen> {
   LoginController loginController = LoginController();
+  final formKey = GlobalKey<FormState>();
 
   @override
   void initState() {
@@ -29,6 +30,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 color: transparent
               ),
               child: Form(
+                key: formKey,
                 child: Column(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.start,
@@ -110,7 +112,9 @@ class _LoginScreenState extends State<LoginScreen> {
           padding: const EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
           child: Buttons(
             onPressed: () {
-              loginController.redirectLogin(context);
+              if (formKey.currentState!.validate()) {
+                loginController.redirectLogin(context);
+              }
             },
             child: const Center(
               child: Text(

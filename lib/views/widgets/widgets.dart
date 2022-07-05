@@ -4,3 +4,4 @@ import 'package:textfield_search/textfield_search.dart';
 
 part 'theme_helper.dart';
 part 'dynamic_items.dart';
+part 'extensions.dart';

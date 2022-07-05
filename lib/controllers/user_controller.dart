@@ -362,7 +362,7 @@ class ProfileController {
 
     // Redirect to login screen
     await Navigator.of(context).pushNamedAndRemoveUntil(
-      '/profile',
+      '/homepage',
       (r) => false
     );
   }

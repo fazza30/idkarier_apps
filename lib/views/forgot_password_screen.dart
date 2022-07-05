@@ -17,6 +17,7 @@ class _ForgotPasswordState extends State<ForgotPassword> {
     'Apa hewan peliharaanmu?',
     'Apa warna favoritmu?'
   ];
+  final formKey = GlobalKey<FormState>();
 
   @override
   void initState() {
@@ -37,6 +38,7 @@ class _ForgotPasswordState extends State<ForgotPassword> {
                   color: transparent
                 ),
                 child: Form(
+                  key: formKey,
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.start,
@@ -75,6 +77,7 @@ class _ForgotPasswordState extends State<ForgotPassword> {
                       Padding(
                           padding: const EdgeInsetsDirectional.fromSTEB(20, 10, 20, 0),
                           child: SearchField(
+                            isEnable: true,
                             textSearchController: forgotPasswordController.qn,
                             title: "Pertanyaan Keamanan",
                             hint: "Ketik 'apa' dan pilih salah satu",
@@ -115,7 +118,9 @@ class _ForgotPasswordState extends State<ForgotPassword> {
           padding: const EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
           child: Buttons(
             onPressed: () {
-              forgotPasswordController.redirectLogin(context);
+              if (formKey.currentState!.validate()) {
+                forgotPasswordController.redirectLogin(context);
+              }
             },
             child: const Center(
               child: Text(

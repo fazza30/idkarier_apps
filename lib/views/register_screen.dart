@@ -19,7 +19,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
     'Apa warna favoritmu?'
   ];
   
-  
+  final formKey = GlobalKey<FormState>();
 
   @override
   Widget build(BuildContext context) {
@@ -34,6 +34,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 width: MediaQuery.of(context).size.width,
                 height: MediaQuery.of(context).size.height * 1.3,
                 child: Form(
+                  key: formKey,
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.start,
@@ -104,6 +105,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       Padding(
                         padding: const EdgeInsetsDirectional.fromSTEB(20, 10, 20, 0),
                         child: SearchField(
+                          isEnable: true,
                           textSearchController: registerController.loginType,
                           title: "Status",
                           hint: "Mahasiswa / Alumni",
@@ -114,6 +116,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       Padding(
                         padding: const EdgeInsetsDirectional.fromSTEB(20, 10, 20, 0),
                         child: SearchField(
+                          isEnable: true,
                           textSearchController: registerController.qn,
                           title: "Pertanyaan Keamanan",
                           hint: "Ketik 'apa' dan pilih salah satu",
@@ -180,7 +183,9 @@ class _RegisterScreenState extends State<RegisterScreen> {
           padding: const EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
           child: Buttons(
             onPressed: () {
-              registerController.redirectRegister(context);
+              if(formKey.currentState!.validate()) {
+                registerController.redirectRegister(context);
+              }
             },
             child: const Center(
               child: Text(

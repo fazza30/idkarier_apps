@@ -11,3 +11,4 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 part 'menu_store.dart';
 part 'quiz_store.dart';
+part 'chart_store.dart';

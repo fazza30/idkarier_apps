@@ -13,14 +13,19 @@ class _HomepageScreenState extends State<HomepageScreen> {
   String? user, username;
   ProfileController profileController = ProfileController();
 
-  CategoryController categoryController = CategoryController();
-  late Future<List<CategoryModel>> listData;
+  late List<Categories> category = [];
 
   @override
   void initState() {
     super.initState(); 
-    listData = categoryController.showAllCategory();
     getCredentials();
+
+    var categoryList = QuizStore();
+    categoryList.loadCategories().then((value) {
+      setState(() {
+        category = value;
+      });
+    });
   }
 
   // Collect data from login state
@@ -84,22 +89,21 @@ class _HomepageScreenState extends State<HomepageScreen> {
               padding: const EdgeInsetsDirectional.fromSTEB(0, 20, 0, 0),
               child: SizedBox(
                 width: MediaQuery.of(context).size.width,
-                child: Padding(
-                  padding: const EdgeInsetsDirectional.fromSTEB(20, 0, 20, 0),
-                  child: Column(
-                    mainAxisSize: MainAxisSize.max,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: <Widget>[
-                      Text(
-                        'Mandatory',
+                child: Column(
+                  mainAxisSize: MainAxisSize.max,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Padding(
+                      padding: const EdgeInsetsDirectional.fromSTEB(30, 0, 30, 10),
+                      child: Text(
+                        'Kategori',
                         style: Theme.of(context).textTheme.headline6
                       ),
-                      Padding(
-                        padding: const EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
-                        child: categoryGridView(),
-                      ),
-                    ],
-                  ),
+                    ),
+                    Center(
+                      child: categoryGridView(),
+                    )
+                  ],
                 ),
               ),
             ),
@@ -285,64 +289,51 @@ class _HomepageScreenState extends State<HomepageScreen> {
   }
 
   categoryGridView() {
-    return FutureBuilder<List<CategoryModel>>(
-      future: listData,
-      builder: (context, snapshot) {
-        if (snapshot.hasData) {
-          List<CategoryModel> isiData = snapshot.data!;
-          return Container(
-            height: 250,
-            // decoration: BoxDecoration(
-            //   border: Border.all()
-            // ),
-            child: GridView.builder(
-              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: 3,
-                crossAxisSpacing: 10,
-                mainAxisSpacing: 10,
-                childAspectRatio: 2/2
-              ),
-              itemCount: isiData.length,
-              itemBuilder: (context, index) {
-                return InkWell(
-                  onTap: () {
-                    Navigator.of(context).pushNamed('/quiz');
-                  },
-                  child: Container(
-                    alignment: Alignment.center,
-                    padding: const EdgeInsets.all(10),
-                    decoration: const BoxDecoration(
-                      color: blueColor,
-                      borderRadius: BorderRadius.all(Radius.circular(15))
-                    ),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        const Icon(
-                          Icons.people,
-                          size: 30,
-                          color: whiteIconColor,
-                        ),
-                        Text(
-                          isiData[index].category,
-                          textAlign: TextAlign.center,
-                          style: const TextStyle(
-                            color: textButtonColor
-                          ),
-                        )
-                      ],
-                    ),
-                  ),
-                );
-              }
+    return SingleChildScrollView(
+      child: Wrap(
+        spacing: 10,
+        runSpacing: 10,
+        direction: Axis.horizontal,
+        children: category.map(
+          (x) => InkWell(
+            onTap: () async {
+              Navigator.of(context).pushNamed('/quiz', arguments: x);
+            },
+            child: categoryGridViewItems(x),
+          )
+        ).toList(),
+      ),
+    );
+  }
+
+  categoryGridViewItems(Categories categories) {
+    return Container(
+      width: 110,
+      height: 110,
+      alignment: Alignment.center,
+      padding: const EdgeInsets.all(10),
+      decoration: BoxDecoration(
+        color: blueColor,
+        borderRadius: BorderRadius.circular(15)
+      ),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Image(
+            image: AssetImage(categories.imagePath),
+            width: 40,
+          ),
+          Text(
+            categories.category,
+            textAlign: TextAlign.center,
+            style: const TextStyle(
+              color: textButtonColor,
+              fontSize: 12
             ),
-          );
-        } else if (snapshot.hasError) {
-          return Text('${snapshot.error}');
-        }
-        return const CircularProgressIndicator();
-      },
+          )
+        ],
+      ),
     );
   }
 }

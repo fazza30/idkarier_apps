@@ -28,6 +28,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
     answerValidation,
     profilePicture;
   ProfileController profileController = ProfileController();
+  final formKey = GlobalKey<FormState>();
 
   void getCredentials() async {
     SharedPreferences? pref = await SharedPreferences.getInstance();
@@ -172,114 +173,121 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 padding: const EdgeInsetsDirectional.fromSTEB(0, 15, 0, 0),
                 child: SizedBox(
                   width: MediaQuery.of(context).size.width,
-                  child: Column(
-                    mainAxisSize: MainAxisSize.max,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: <Widget>[
-                      // Firstname & Lastname field
-                      Padding(
-                        padding: const EdgeInsetsDirectional.fromSTEB(20, 0, 20, 0),
-                        child: Row(
-                          mainAxisSize: MainAxisSize.max,
-                          children: <Widget>[
-                            Expanded(
-                              child: Padding(
-                                padding: const EdgeInsetsDirectional.fromSTEB(0, 0, 10, 0),
-                                child: InputTextFields(
-                                  textInputController: profileController.firstname,
-                                  title: "Nama Depan",
-                                  hint: "$firstname",
-                                  keyboardType: TextInputType.name
+                  child: Form(
+                    key: formKey,
+                    child: Column(
+                      mainAxisSize: MainAxisSize.max,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: <Widget>[
+                        // Firstname & Lastname field
+                        Padding(
+                          padding: const EdgeInsetsDirectional.fromSTEB(20, 0, 20, 0),
+                          child: Row(
+                            mainAxisSize: MainAxisSize.max,
+                            children: <Widget>[
+                              Expanded(
+                                child: Padding(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(0, 0, 10, 0),
+                                  child: InputTextFields(
+                                    textInputController: profileController.firstname,
+                                    title: "Nama Depan",
+                                    hint: "$firstname",
+                                    keyboardType: TextInputType.name
+                                  ),
                                 ),
                               ),
-                            ),
-                            Expanded(
-                              child: Padding(
-                                padding: const EdgeInsetsDirectional.fromSTEB(10, 0, 0, 0),
-                                child: InputTextFields(
-                                  textInputController: profileController.lastname,
-                                  title: "Nama Belakang",
-                                  hint: "$lastname",
-                                  keyboardType: TextInputType.name
-                                ),
+                              Expanded(
+                                child: Padding(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(10, 0, 0, 0),
+                                  child: InputTextFields(
+                                    textInputController: profileController.lastname,
+                                    title: "Nama Belakang",
+                                    hint: "$lastname",
+                                    keyboardType: TextInputType.name
+                                  ),
+                                )
                               )
-                            )
-                          ],
+                            ],
+                          ),
                         ),
-                      ),
-                      // Email field
-                      Padding(
-                        padding: const EdgeInsetsDirectional.fromSTEB(20, 10, 20, 0),
-                        child: InputTextFields(
-                          textInputController: profileController.email,
-                          title: "Email",
-                          hint: "$email",
-                          keyboardType: TextInputType.emailAddress
+                        // Email field
+                        Padding(
+                          padding: const EdgeInsetsDirectional.fromSTEB(20, 10, 20, 0),
+                          child: InputTextFields(
+                            textInputController: profileController.email,
+                            title: "Email",
+                            hint: "$email",
+                            keyboardType: TextInputType.emailAddress
+                          )
+                        ),
+                        // Phone number field
+                        Padding(
+                          padding: const EdgeInsetsDirectional.fromSTEB(20, 10, 20, 0),
+                          child: InputTextFields(
+                            textInputController: profileController.phone,
+                            title: "No. Telepon",
+                            hint: "$phone",
+                            keyboardType: TextInputType.number
+                          )
+                        ),
+                        // Status field
+                        Padding(
+                          padding: const EdgeInsetsDirectional.fromSTEB(20, 10, 20, 0),
+                          child: SearchField(
+                            isEnable: false,
+                            textSearchController: profileController.loginType,
+                            hint: "$loginType",
+                            title: "Status",
+                            itemList: loginTypeList
+                          ),
+                        ),
+                        // Qn field
+                        Padding(
+                          padding: const EdgeInsetsDirectional.fromSTEB(20, 10, 20, 0),
+                          child: SearchField(
+                            isEnable: true,
+                            textSearchController: profileController.qn,
+                            hint: "$pertanyaanValidasi",
+                            title: "Pertanyaan Keamanan",
+                            itemList: qnList
+                          ),
+                        ),
+                        // Answer field
+                        Padding(
+                          padding: const EdgeInsetsDirectional.fromSTEB(20, 10, 20, 0),
+                          child: InputTextFields(
+                            textInputController: profileController.answer,
+                            title: "Jawaban Keamanan",
+                            hint: "$answerValidation",
+                            keyboardType: TextInputType.text
+                          ),
+                        ),
+                        // Username field
+                        Padding(
+                          padding: const EdgeInsetsDirectional.fromSTEB(20, 10, 20, 0),
+                          child: InputTextFields(
+                            textInputController: profileController.username,
+                            title: "Username",
+                            hint: "$username",
+                            keyboardType: TextInputType.text
+                          ),
+                        ),
+                        // Password field
+                        Padding(
+                          padding: const EdgeInsetsDirectional.fromSTEB(20, 10, 20, 0),
+                          child: InputPasswordFields(
+                            textPasswordController: profileController.password,
+                            title: "Kata Sandi",
+                            hint: "$password",
+                          ),
+                        ),
+                        // Edit button
+                        Padding(
+                          padding: const EdgeInsetsDirectional.fromSTEB(20, 30, 20, 0),
+                          child: editActionButton()
                         )
-                      ),
-                      // Phone number field
-                      Padding(
-                        padding: const EdgeInsetsDirectional.fromSTEB(20, 10, 20, 0),
-                        child: InputTextFields(
-                          textInputController: profileController.phone,
-                          title: "No. Telepon",
-                          hint: "$phone",
-                          keyboardType: TextInputType.number
-                        )
-                      ),
-                      // Status field
-                      Padding(
-                        padding: const EdgeInsetsDirectional.fromSTEB(20, 10, 20, 0),
-                        child: DropdownFormField(
-                          dropdownController: profileController.loginType,
-                          title: "Status",
-                          itemList: loginTypeList
-                        ),
-                      ),
-                      // Qn field
-                      Padding(
-                        padding: const EdgeInsetsDirectional.fromSTEB(20, 10, 20, 0),
-                        child: DropdownFormField(
-                          dropdownController: profileController.qn,
-                          title: "Pertanyaan Keamanan",
-                          itemList: qnList
-                        ),
-                      ),
-                      // Answer field
-                      Padding(
-                        padding: const EdgeInsetsDirectional.fromSTEB(20, 10, 20, 0),
-                        child: InputTextFields(
-                          textInputController: profileController.answer,
-                          title: "Jawaban Keamanan",
-                          hint: "$answerValidation",
-                          keyboardType: TextInputType.text
-                        ),
-                      ),
-                      // Username field
-                      Padding(
-                        padding: const EdgeInsetsDirectional.fromSTEB(20, 10, 20, 0),
-                        child: InputTextFields(
-                          textInputController: profileController.username,
-                          title: "Username",
-                          hint: "$username",
-                          keyboardType: TextInputType.text
-                        ),
-                      ),
-                      // Password field
-                      Padding(
-                        padding: const EdgeInsetsDirectional.fromSTEB(20, 10, 20, 0),
-                        child: InputPasswordFields(
-                          textPasswordController: profileController.password,
-                          title: "Kata Sandi",
-                          hint: "$password",
-                        ),
-                      ),
-                      // Edit button
-                      Padding(
-                        padding: const EdgeInsetsDirectional.fromSTEB(20, 30, 20, 0),
-                        child: editActionButton()
-                      )
-                    ],
+                      ],
+                    ),
                   ),
                 ),
               )

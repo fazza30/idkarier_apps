@@ -1,0 +1,1011 @@
+[
+  {
+    "id_category": 1,
+    "category": "Pengelola",
+    "image_path": "assets/icons/categories/pengelola.png",
+    "total_qn": 4,
+    "questions": [
+      {
+        "id_question": 1,
+        "question": "Pusat Karier memiliki visi dan misi yang jelas",
+        "cek_answer": 0,
+        "options": [
+          {
+            "id_result": 1,
+            "result": "Sangat Tidak Setuju",
+            "image_path": "assets/icons/options/strongly_disagree.png"
+          },
+          {
+            "id_result": 2,
+            "result": "Tidak Setuju",
+            "image_path": "assets/icons/options/disagree.png"
+          },
+          {
+            "id_result": 3,
+            "result": "Setuju",
+            "image_path": "assets/icons/options/agree.png"
+          },
+          {
+            "id_result": 4,
+            "result": "Sangat Setuju",
+            "image_path": "assets/icons/options/strongly_agree.png"
+          }
+        ]
+      },
+      {
+        "id_question": 2,
+        "question": "Tujuan dari Pusat Karier telah difahami dengan baik oleh seluruh pengguna layanan",
+        "cek_answer": 0,
+        "options": [
+          {
+            "id_result": 1,
+            "result": "Sangat Tidak Setuju",
+            "image_path": "assets/icons/options/strongly_disagree.png"
+          },
+          {
+            "id_result": 2,
+            "result": "Tidak Setuju",
+            "image_path": "assets/icons/options/disagree.png"
+          },
+          {
+            "id_result": 3,
+            "result": "Setuju",
+            "image_path": "assets/icons/options/agree.png"
+          },
+          {
+            "id_result": 4,
+            "result": "Sangat Setuju",
+            "image_path": "assets/icons/options/strongly_agree.png"
+          }
+        ]
+      },
+      {
+        "id_question": 3,
+        "question": "Pusat Karier memberikan layanan konsisten dengan tujuan",
+        "cek_answer": 0,
+        "options": [
+          {
+            "id_result": 1,
+            "result": "Sangat Tidak Setuju",
+            "image_path": "assets/icons/options/strongly_disagree.png"
+          },
+          {
+            "id_result": 2,
+            "result": "Tidak Setuju",
+            "image_path": "assets/icons/options/disagree.png"
+          },
+          {
+            "id_result": 3,
+            "result": "Setuju",
+            "image_path": "assets/icons/options/agree.png"
+          },
+          {
+            "id_result": 4,
+            "result": "Sangat Setuju",
+            "image_path": "assets/icons/options/strongly_agree.png"
+          }
+        ]
+      },
+      {
+        "id_question": 4,
+        "question": "Informasi layanan Pusat Karier mudah diakses",
+        "cek_answer": 0,
+        "options": [
+          {
+            "id_result": 1,
+            "result": "Sangat Tidak Setuju",
+            "image_path": "assets/icons/options/strongly_disagree.png"
+          },
+          {
+            "id_result": 2,
+            "result": "Tidak Setuju",
+            "image_path": "assets/icons/options/disagree.png"
+          },
+          {
+            "id_result": 3,
+            "result": "Setuju",
+            "image_path": "assets/icons/options/agree.png"
+          },
+          {
+            "id_result": 4,
+            "result": "Sangat Setuju",
+            "image_path": "assets/icons/options/strongly_agree.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id_category": 2,
+    "category": "Media Sosial",
+    "image_path": "assets/icons/categories/media_sosial.png",
+    "total_qn": 4,
+    "questions": [
+      {
+        "id_question": 1,
+        "question": "Konten Media Pusat Karier informatif",
+        "cek_answer": 0,
+        "options": [
+          {
+            "id_result": 1,
+            "result": "Sangat Tidak Setuju",
+            "image_path": "assets/icons/options/strongly_disagree.png"
+          },
+          {
+            "id_result": 2,
+            "result": "Tidak Setuju",
+            "image_path": "assets/icons/options/disagree.png"
+          },
+          {
+            "id_result": 3,
+            "result": "Setuju",
+            "image_path": "assets/icons/options/agree.png"
+          },
+          {
+            "id_result": 4,
+            "result": "Sangat Setuju",
+            "image_path": "assets/icons/options/strongly_agree.png"
+          }
+        ]
+      },
+      {
+        "id_question": 2,
+        "question": "Presentasi Media Pusat Karier Menarik",
+        "cek_answer": 0,
+        "options": [
+          {
+            "id_result": 1,
+            "result": "Sangat Tidak Setuju",
+            "image_path": "assets/icons/options/strongly_disagree.png"
+          },
+          {
+            "id_result": 2,
+            "result": "Tidak Setuju",
+            "image_path": "assets/icons/options/disagree.png"
+          },
+          {
+            "id_result": 3,
+            "result": "Setuju",
+            "image_path": "assets/icons/options/agree.png"
+          },
+          {
+            "id_result": 4,
+            "result": "Sangat Setuju",
+            "image_path": "assets/icons/options/strongly_agree.png"
+          }
+        ]
+      },
+      {
+        "id_question": 3,
+        "question": "Konten Media Pusat Karier mudah difahami",
+        "cek_answer": 0,
+        "options": [
+          {
+            "id_result": 1,
+            "result": "Sangat Tidak Setuju",
+            "image_path": "assets/icons/options/strongly_disagree.png"
+          },
+          {
+            "id_result": 2,
+            "result": "Tidak Setuju",
+            "image_path": "assets/icons/options/disagree.png"
+          },
+          {
+            "id_result": 3,
+            "result": "Setuju",
+            "image_path": "assets/icons/options/agree.png"
+          },
+          {
+            "id_result": 4,
+            "result": "Sangat Setuju",
+            "image_path": "assets/icons/options/strongly_agree.png"
+          }
+        ]
+      },
+      {
+        "id_question": 4,
+        "question": "Konten Media Pusat Karier sesuai dengan kebutuhan karier",
+        "cek_answer": 0,
+        "options": [
+          {
+            "id_result": 1,
+            "result": "Sangat Tidak Setuju",
+            "image_path": "assets/icons/options/strongly_disagree.png"
+          },
+          {
+            "id_result": 2,
+            "result": "Tidak Setuju",
+            "image_path": "assets/icons/options/disagree.png"
+          },
+          {
+            "id_result": 3,
+            "result": "Setuju",
+            "image_path": "assets/icons/options/agree.png"
+          },
+          {
+            "id_result": 4,
+            "result": "Sangat Setuju",
+            "image_path": "assets/icons/options/strongly_agree.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id_category": 3,
+    "category": "Organizational Belonging",
+    "image_path": "assets/icons/categories/organizational_belonging.png",
+    "total_qn": 5,
+    "questions": [
+      {
+        "id_question": 1,
+        "question": "Saya senang mengikuti sosial media Pusat Karier",
+        "cek_answer": 0,
+        "options": [
+          {
+            "id_result": 1,
+            "result": "Sangat Tidak Setuju",
+            "image_path": "assets/icons/options/strongly_disagree.png"
+          },
+          {
+            "id_result": 2,
+            "result": "Tidak Setuju",
+            "image_path": "assets/icons/options/disagree.png"
+          },
+          {
+            "id_result": 3,
+            "result": "Setuju",
+            "image_path": "assets/icons/options/agree.png"
+          },
+          {
+            "id_result": 4,
+            "result": "Sangat Setuju",
+            "image_path": "assets/icons/options/strongly_agree.png"
+          }
+        ]
+      },
+      {
+        "id_question": 2,
+        "question": "Saya akan merekomendasikan teman untuk menjadi pengikut sosial media Pusat Karier",
+        "cek_answer": 0,
+        "options": [
+          {
+            "id_result": 1,
+            "result": "Sangat Tidak Setuju",
+            "image_path": "assets/icons/options/strongly_disagree.png"
+          },
+          {
+            "id_result": 2,
+            "result": "Tidak Setuju",
+            "image_path": "assets/icons/options/disagree.png"
+          },
+          {
+            "id_result": 3,
+            "result": "Setuju",
+            "image_path": "assets/icons/options/agree.png"
+          },
+          {
+            "id_result": 4,
+            "result": "Sangat Setuju",
+            "image_path": "assets/icons/options/strongly_agree.png"
+          }
+        ]
+      },
+      {
+        "id_question": 3,
+        "question": "Pusat Karier memberikan layanan yang saya butuhkan untuk mempersiapkan karier di industri",
+        "cek_answer": 0,
+        "options": [
+          {
+            "id_result": 1,
+            "result": "Sangat Tidak Setuju",
+            "image_path": "assets/icons/options/strongly_disagree.png"
+          },
+          {
+            "id_result": 2,
+            "result": "Tidak Setuju",
+            "image_path": "assets/icons/options/disagree.png"
+          },
+          {
+            "id_result": 3,
+            "result": "Setuju",
+            "image_path": "assets/icons/options/agree.png"
+          },
+          {
+            "id_result": 4,
+            "result": "Sangat Setuju",
+            "image_path": "assets/icons/options/strongly_agree.png"
+          }
+        ]
+      },
+      {
+        "id_question": 4,
+        "question": "Pusat Karier memberikan layanan yang saya butuhkan untuk mempersiapkan karier sebagai wirausaha",
+        "cek_answer": 0,
+        "options": [
+          {
+            "id_result": 1,
+            "result": "Sangat Tidak Setuju",
+            "image_path": "assets/icons/options/strongly_disagree.png"
+          },
+          {
+            "id_result": 2,
+            "result": "Tidak Setuju",
+            "image_path": "assets/icons/options/disagree.png"
+          },
+          {
+            "id_result": 3,
+            "result": "Setuju",
+            "image_path": "assets/icons/options/agree.png"
+          },
+          {
+            "id_result": 4,
+            "result": "Sangat Setuju",
+            "image_path": "assets/icons/options/strongly_agree.png"
+          }
+        ]
+      },
+      {
+        "id_question": 5,
+        "question": "Pusat Karier memberikan layanan yang saya butuhkan untuk mempersiapkan karier untuk studi lanjut",
+        "cek_answer": 0,
+        "options": [
+          {
+            "id_result": 1,
+            "result": "Sangat Tidak Setuju",
+            "image_path": "assets/icons/options/strongly_disagree.png"
+          },
+          {
+            "id_result": 2,
+            "result": "Tidak Setuju",
+            "image_path": "assets/icons/options/disagree.png"
+          },
+          {
+            "id_result": 3,
+            "result": "Setuju",
+            "image_path": "assets/icons/options/agree.png"
+          },
+          {
+            "id_result": 4,
+            "result": "Sangat Setuju",
+            "image_path": "assets/icons/options/strongly_agree.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id_category": 4,
+    "category": "Administrasi",
+    "image_path": "assets/icons/categories/administrasi.png",
+    "total_qn": 3,
+    "questions": [
+      {
+        "id_question": 1,
+        "question": "Prosedur kerjasama sudah dapat dipahami dengan baik",
+        "cek_answer": 0,
+        "options": [
+          {
+            "id_result": 1,
+            "result": "Sangat Tidak Setuju",
+            "image_path": "assets/icons/options/strongly_disagree.png"
+          },
+          {
+            "id_result": 2,
+            "result": "Tidak Setuju",
+            "image_path": "assets/icons/options/disagree.png"
+          },
+          {
+            "id_result": 3,
+            "result": "Setuju",
+            "image_path": "assets/icons/options/agree.png"
+          },
+          {
+            "id_result": 4,
+            "result": "Sangat Setuju",
+            "image_path": "assets/icons/options/strongly_agree.png"
+          }
+        ]
+      },
+      {
+        "id_question": 2,
+        "question": "Admin Pusat Karier cepat menanggapi e-mail yang masuk",
+        "cek_answer": 0,
+        "options": [
+          {
+            "id_result": 1,
+            "result": "Sangat Tidak Setuju",
+            "image_path": "assets/icons/options/strongly_disagree.png"
+          },
+          {
+            "id_result": 2,
+            "result": "Tidak Setuju",
+            "image_path": "assets/icons/options/disagree.png"
+          },
+          {
+            "id_result": 3,
+            "result": "Setuju",
+            "image_path": "assets/icons/options/agree.png"
+          },
+          {
+            "id_result": 4,
+            "result": "Sangat Setuju",
+            "image_path": "assets/icons/options/strongly_agree.png"
+          }
+        ]
+      },
+      {
+        "id_question": 3,
+        "question": "Pusat Karier mengurus persuratan yang dibutuhkan dengan cepat",
+        "cek_answer": 0,
+        "options": [
+          {
+            "id_result": 1,
+            "result": "Sangat Tidak Setuju",
+            "image_path": "assets/icons/options/strongly_disagree.png"
+          },
+          {
+            "id_result": 2,
+            "result": "Tidak Setuju",
+            "image_path": "assets/icons/options/disagree.png"
+          },
+          {
+            "id_result": 3,
+            "result": "Setuju",
+            "image_path": "assets/icons/options/agree.png"
+          },
+          {
+            "id_result": 4,
+            "result": "Sangat Setuju",
+            "image_path": "assets/icons/options/strongly_agree.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id_category": 5,
+    "category": "Event",
+    "image_path": "assets/icons/categories/event.png",
+    "total_qn": 7,
+    "questions": [
+      {
+        "id_question": 1,
+        "question": "Kegiatan yang dibuat Pusat Karier sesuai dengan kebutuhan mahasiswa dan alumni",
+        "cek_answer": 0,
+        "options": [
+          {
+            "id_result": 1,
+            "result": "Sangat Tidak Setuju",
+            "image_path": "assets/icons/options/strongly_disagree.png"
+          },
+          {
+            "id_result": 2,
+            "result": "Tidak Setuju",
+            "image_path": "assets/icons/options/disagree.png"
+          },
+          {
+            "id_result": 3,
+            "result": "Setuju",
+            "image_path": "assets/icons/options/agree.png"
+          },
+          {
+            "id_result": 4,
+            "result": "Sangat Setuju",
+            "image_path": "assets/icons/options/strongly_agree.png"
+          }
+        ]
+      },
+      {
+        "id_question": 2,
+        "question": "Kegiatan yang diadakan pusat karier relevan dengan perkembangan dunia karier masa kini",
+        "cek_answer": 0,
+        "options": [
+          {
+            "id_result": 1,
+            "result": "Sangat Tidak Setuju",
+            "image_path": "assets/icons/options/strongly_disagree.png"
+          },
+          {
+            "id_result": 2,
+            "result": "Tidak Setuju",
+            "image_path": "assets/icons/options/disagree.png"
+          },
+          {
+            "id_result": 3,
+            "result": "Setuju",
+            "image_path": "assets/icons/options/agree.png"
+          },
+          {
+            "id_result": 4,
+            "result": "Sangat Setuju",
+            "image_path": "assets/icons/options/strongly_agree.png"
+          }
+        ]
+      },
+      {
+        "id_question": 3,
+        "question": "Kegiatan Pusat Karier dapat meningkatkan kemampuan mahasiswa/alumni untuk lebih siap memasuki dunia karier",
+        "cek_answer": 0,
+        "options": [
+          {
+            "id_result": 1,
+            "result": "Sangat Tidak Setuju",
+            "image_path": "assets/icons/options/strongly_disagree.png"
+          },
+          {
+            "id_result": 2,
+            "result": "Tidak Setuju",
+            "image_path": "assets/icons/options/disagree.png"
+          },
+          {
+            "id_result": 3,
+            "result": "Setuju",
+            "image_path": "assets/icons/options/agree.png"
+          },
+          {
+            "id_result": 4,
+            "result": "Sangat Setuju",
+            "image_path": "assets/icons/options/strongly_agree.png"
+          }
+        ]
+      },
+      {
+        "id_question": 4,
+        "question": "Variasi kegiatan Pusat Karier memberikan saya motivasi untuk mempersiapkan karier yang excellent",
+        "cek_answer": 0,
+        "options": [
+          {
+            "id_result": 1,
+            "result": "Sangat Tidak Setuju",
+            "image_path": "assets/icons/options/strongly_disagree.png"
+          },
+          {
+            "id_result": 2,
+            "result": "Tidak Setuju",
+            "image_path": "assets/icons/options/disagree.png"
+          },
+          {
+            "id_result": 3,
+            "result": "Setuju",
+            "image_path": "assets/icons/options/agree.png"
+          },
+          {
+            "id_result": 4,
+            "result": "Sangat Setuju",
+            "image_path": "assets/icons/options/strongly_agree.png"
+          }
+        ]
+      },
+      {
+        "id_question": 5,
+        "question": "Narasumber kegiatan Pusat Karier adalah mereka yang profesional di bidangnya",
+        "cek_answer": 0,
+        "options": [
+          {
+            "id_result": 1,
+            "result": "Sangat Tidak Setuju",
+            "image_path": "assets/icons/options/strongly_disagree.png"
+          },
+          {
+            "id_result": 2,
+            "result": "Tidak Setuju",
+            "image_path": "assets/icons/options/disagree.png"
+          },
+          {
+            "id_result": 3,
+            "result": "Setuju",
+            "image_path": "assets/icons/options/agree.png"
+          },
+          {
+            "id_result": 4,
+            "result": "Sangat Setuju",
+            "image_path": "assets/icons/options/strongly_agree.png"
+          }
+        ]
+      },
+      {
+        "id_question": 6,
+        "question": "Sertifikat keikutsertaan kegiatan Pusat Karier diterima tepat pada waktunya",
+        "cek_answer": 0,
+        "options": [
+          {
+            "id_result": 1,
+            "result": "Sangat Tidak Setuju",
+            "image_path": "assets/icons/options/strongly_disagree.png"
+          },
+          {
+            "id_result": 2,
+            "result": "Tidak Setuju",
+            "image_path": "assets/icons/options/disagree.png"
+          },
+          {
+            "id_result": 3,
+            "result": "Setuju",
+            "image_path": "assets/icons/options/agree.png"
+          },
+          {
+            "id_result": 4,
+            "result": "Sangat Setuju",
+            "image_path": "assets/icons/options/strongly_agree.png"
+          }
+        ]
+      },
+      {
+        "id_question": 7,
+        "question": "Saya senang mengikuti kegiatan Pusat Karier",
+        "cek_answer": 0,
+        "options": [
+          {
+            "id_result": 1,
+            "result": "Sangat Tidak Setuju",
+            "image_path": "assets/icons/options/strongly_disagree.png"
+          },
+          {
+            "id_result": 2,
+            "result": "Tidak Setuju",
+            "image_path": "assets/icons/options/disagree.png"
+          },
+          {
+            "id_result": 3,
+            "result": "Setuju",
+            "image_path": "assets/icons/options/agree.png"
+          },
+          {
+            "id_result": 4,
+            "result": "Sangat Setuju",
+            "image_path": "assets/icons/options/strongly_agree.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id_category": 6,
+    "category": "Pengembangan Diri",
+    "image_path": "assets/icons/categories/pengembangan_diri.png",
+    "total_qn": 4,
+    "questions": [
+      {
+        "id_question": 1,
+        "question": "Saya mendapatkan manfaat dari kegiatan yang diselenggarakan Pusat Karier",
+        "cek_answer": 0,
+        "options": [
+          {
+            "id_result": 1,
+            "result": "Sangat Tidak Setuju",
+            "image_path": "assets/icons/options/strongly_disagree.png"
+          },
+          {
+            "id_result": 2,
+            "result": "Tidak Setuju",
+            "image_path": "assets/icons/options/disagree.png"
+          },
+          {
+            "id_result": 3,
+            "result": "Setuju",
+            "image_path": "assets/icons/options/agree.png"
+          },
+          {
+            "id_result": 4,
+            "result": "Sangat Setuju",
+            "image_path": "assets/icons/options/strongly_agree.png"
+          }
+        ]
+      },
+      {
+        "id_question": 2,
+        "question": "Saya senang dengan kesempatan yang diberikan Pusat Karier dalam program terstrukturnya",
+        "cek_answer": 0,
+        "options": [
+          {
+            "id_result": 1,
+            "result": "Sangat Tidak Setuju",
+            "image_path": "assets/icons/options/strongly_disagree.png"
+          },
+          {
+            "id_result": 2,
+            "result": "Tidak Setuju",
+            "image_path": "assets/icons/options/disagree.png"
+          },
+          {
+            "id_result": 3,
+            "result": "Setuju",
+            "image_path": "assets/icons/options/agree.png"
+          },
+          {
+            "id_result": 4,
+            "result": "Sangat Setuju",
+            "image_path": "assets/icons/options/strongly_agree.png"
+          }
+        ]
+      },
+      {
+        "id_question": 3,
+        "question": "Saya mendapatkan alternatif yang cukup memadai untuk meningkatkan pengetahuan dan kompetensi yang saya inginkan",
+        "cek_answer": 0,
+        "options": [
+          {
+            "id_result": 1,
+            "result": "Sangat Tidak Setuju",
+            "image_path": "assets/icons/options/strongly_disagree.png"
+          },
+          {
+            "id_result": 2,
+            "result": "Tidak Setuju",
+            "image_path": "assets/icons/options/disagree.png"
+          },
+          {
+            "id_result": 3,
+            "result": "Setuju",
+            "image_path": "assets/icons/options/agree.png"
+          },
+          {
+            "id_result": 4,
+            "result": "Sangat Setuju",
+            "image_path": "assets/icons/options/strongly_agree.png"
+          }
+        ]
+      },
+      {
+        "id_question": 4,
+        "question": "Saya termotivasi untuk mengembangkan keterampilan baru setelah mengikuti kegiatan Pusat Karier",
+        "cek_answer": 0,
+        "options": [
+          {
+            "id_result": 1,
+            "result": "Sangat Tidak Setuju",
+            "image_path": "assets/icons/options/strongly_disagree.png"
+          },
+          {
+            "id_result": 2,
+            "result": "Tidak Setuju",
+            "image_path": "assets/icons/options/disagree.png"
+          },
+          {
+            "id_result": 3,
+            "result": "Setuju",
+            "image_path": "assets/icons/options/agree.png"
+          },
+          {
+            "id_result": 4,
+            "result": "Sangat Setuju",
+            "image_path": "assets/icons/options/strongly_agree.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id_category": 7,
+    "category": "Servis Data",
+    "image_path": "assets/icons/categories/servis_data.png",
+    "total_qn": 5,
+    "questions": [
+      {
+        "id_question": 1,
+        "question": "Data tracer study mudah diakses prodi",
+        "cek_answer": 0,
+        "options": [
+          {
+            "id_result": 1,
+            "result": "Sangat Tidak Setuju",
+            "image_path": "assets/icons/options/strongly_disagree.png"
+          },
+          {
+            "id_result": 2,
+            "result": "Tidak Setuju",
+            "image_path": "assets/icons/options/disagree.png"
+          },
+          {
+            "id_result": 3,
+            "result": "Setuju",
+            "image_path": "assets/icons/options/agree.png"
+          },
+          {
+            "id_result": 4,
+            "result": "Sangat Setuju",
+            "image_path": "assets/icons/options/strongly_agree.png"
+          }
+        ]
+      },
+      {
+        "id_question": 2,
+        "question": "Pusat Karier merespon cepat kebutuhan data",
+        "cek_answer": 0,
+        "options": [
+          {
+            "id_result": 1,
+            "result": "Sangat Tidak Setuju",
+            "image_path": "assets/icons/options/strongly_disagree.png"
+          },
+          {
+            "id_result": 2,
+            "result": "Tidak Setuju",
+            "image_path": "assets/icons/options/disagree.png"
+          },
+          {
+            "id_result": 3,
+            "result": "Setuju",
+            "image_path": "assets/icons/options/agree.png"
+          },
+          {
+            "id_result": 4,
+            "result": "Sangat Setuju",
+            "image_path": "assets/icons/options/strongly_agree.png"
+          }
+        ]
+      },
+      {
+        "id_question": 3,
+        "question": "Pusat Karier memberikan data yang dibutuhkan",
+        "cek_answer": 0,
+        "options": [
+          {
+            "id_result": 1,
+            "result": "Sangat Tidak Setuju",
+            "image_path": "assets/icons/options/strongly_disagree.png"
+          },
+          {
+            "id_result": 2,
+            "result": "Tidak Setuju",
+            "image_path": "assets/icons/options/disagree.png"
+          },
+          {
+            "id_result": 3,
+            "result": "Setuju",
+            "image_path": "assets/icons/options/agree.png"
+          },
+          {
+            "id_result": 4,
+            "result": "Sangat Setuju",
+            "image_path": "assets/icons/options/strongly_agree.png"
+          }
+        ]
+      },
+      {
+        "id_question": 4,
+        "question": "Pusat Karier memberikan data yang dapat dipertanggungjawabkan",
+        "cek_answer": 0,
+        "options": [
+          {
+            "id_result": 1,
+            "result": "Sangat Tidak Setuju",
+            "image_path": "assets/icons/options/strongly_disagree.png"
+          },
+          {
+            "id_result": 2,
+            "result": "Tidak Setuju",
+            "image_path": "assets/icons/options/disagree.png"
+          },
+          {
+            "id_result": 3,
+            "result": "Setuju",
+            "image_path": "assets/icons/options/agree.png"
+          },
+          {
+            "id_result": 4,
+            "result": "Sangat Setuju",
+            "image_path": "assets/icons/options/strongly_agree.png"
+          }
+        ]
+      },
+      {
+        "id_question": 5,
+        "question": "Pusat Karier memberikan data yang akurat",
+        "cek_answer": 0,
+        "options": [
+          {
+            "id_result": 1,
+            "result": "Sangat Tidak Setuju",
+            "image_path": "assets/icons/options/strongly_disagree.png"
+          },
+          {
+            "id_result": 2,
+            "result": "Tidak Setuju",
+            "image_path": "assets/icons/options/disagree.png"
+          },
+          {
+            "id_result": 3,
+            "result": "Setuju",
+            "image_path": "assets/icons/options/agree.png"
+          },
+          {
+            "id_result": 4,
+            "result": "Sangat Setuju",
+            "image_path": "assets/icons/options/strongly_agree.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id_category": 8,
+    "category": "Media Partner",
+    "image_path": "assets/icons/categories/media_partner.png",
+    "total_qn": 3,
+    "questions": [
+      {
+        "id_question": 1,
+        "question": "Prosedur kerjasama media partner dapat difahami dengan baik",
+        "cek_answer": 0,
+        "options": [
+          {
+            "id_result": 1,
+            "result": "Sangat Tidak Setuju",
+            "image_path": "assets/icons/options/strongly_disagree.png"
+          },
+          {
+            "id_result": 2,
+            "result": "Tidak Setuju",
+            "image_path": "assets/icons/options/disagree.png"
+          },
+          {
+            "id_result": 3,
+            "result": "Setuju",
+            "image_path": "assets/icons/options/agree.png"
+          },
+          {
+            "id_result": 4,
+            "result": "Sangat Setuju",
+            "image_path": "assets/icons/options/strongly_agree.png"
+          }
+        ]
+      },
+      {
+        "id_question": 2,
+        "question": "Pusat Karier menawarkan kerjasama media partner yang fair",
+        "cek_answer": 0,
+        "options": [
+          {
+            "id_result": 1,
+            "result": "Sangat Tidak Setuju",
+            "image_path": "assets/icons/options/strongly_disagree.png"
+          },
+          {
+            "id_result": 2,
+            "result": "Tidak Setuju",
+            "image_path": "assets/icons/options/disagree.png"
+          },
+          {
+            "id_result": 3,
+            "result": "Setuju",
+            "image_path": "assets/icons/options/agree.png"
+          },
+          {
+            "id_result": 4,
+            "result": "Sangat Setuju",
+            "image_path": "assets/icons/options/strongly_agree.png"
+          }
+        ]
+      },
+      {
+        "id_question": 3,
+        "question": "Kerjasama sebagai media partner dengan Pusat Karier memberikan pengaruh positif terhdap kegiatan yang diselenggarakan",
+        "cek_answer": 0,
+        "options": [
+          {
+            "id_result": 1,
+            "result": "Sangat Tidak Setuju",
+            "image_path": "assets/icons/options/strongly_disagree.png"
+          },
+          {
+            "id_result": 2,
+            "result": "Tidak Setuju",
+            "image_path": "assets/icons/options/disagree.png"
+          },
+          {
+            "id_result": 3,
+            "result": "Setuju",
+            "image_path": "assets/icons/options/agree.png"
+          },
+          {
+            "id_result": 4,
+            "result": "Sangat Setuju",
+            "image_path": "assets/icons/options/strongly_agree.png"
+          }
+        ]
+      }
+    ]
+  }
+]

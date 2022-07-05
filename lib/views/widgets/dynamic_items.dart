@@ -212,6 +212,7 @@ class DropdownFormField extends StatelessWidget {
 class SearchField extends StatelessWidget {
   TextEditingController textSearchController;
   String title, hint;
+  bool isEnable;
   List<String> itemList = [];
   
   SearchField(
@@ -219,6 +220,7 @@ class SearchField extends StatelessWidget {
       required this.textSearchController,
       required this.title,
       required this.hint,
+      required this.isEnable,
       required this.itemList})
       : super(key: key);
 
@@ -233,6 +235,7 @@ class SearchField extends StatelessWidget {
           label: '',
           controller: textSearchController,
           decoration: InputDecoration(
+            enabled: isEnable,
             hintText: hint,
             enabledBorder: const OutlineInputBorder(
                 borderSide: BorderSide(color: Colors.black, width: 1)),
@@ -241,6 +244,56 @@ class SearchField extends StatelessWidget {
           ),
           initialList: itemList,
           textStyle: Theme.of(context).textTheme.bodyText1,
+        )
+      ],
+    );
+  }
+}
+
+// For option
+class QnOpt extends StatelessWidget {
+  bool isSelected;
+  String text;
+  String image;
+  int index;
+
+  QnOpt(
+    this.index, this.image, this.text,
+    {Key? key, this.isSelected = false}
+  ) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        SizedBox(
+          width: 50,
+          height: 50,
+          child: Stack(
+            alignment: Alignment.center,
+            children: [
+              Container(
+                alignment: Alignment.center,
+                width: 50,
+                height: 50,
+                decoration: BoxDecoration(
+                  border: Border.all(color: blueColor, width: 1),
+                  borderRadius: BorderRadius.circular(20),
+                  color: isSelected
+                    ? buttonColor
+                    : backgroundColor
+                ),
+              ),
+              Container(
+                alignment: Alignment.center,
+                child: Image.asset(
+                  image,
+                  width: 48,
+                ),
+              )
+            ],
+          ),
         )
       ],
     );
