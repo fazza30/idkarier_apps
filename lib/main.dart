@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
         primaryColor: primaryColor,
         textTheme: GoogleFonts.poppinsTextTheme(Theme.of(context).textTheme)
       ),
-      initialRoute: '/login',
+      initialRoute: '/',
       onGenerateRoute: Routes.onGenerateRoute
     );
   }

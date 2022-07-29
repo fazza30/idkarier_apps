@@ -11,7 +11,7 @@ class LoginController {
   Future login(body) async {
     try {
       final response = await http.post(Uri.parse(apiLogin),
-          headers: {"Accept": "application/json"}, body: body);
+        headers: {"Accept": "application/json"}, body: body);
       if (response.statusCode == 200) {
         print("Code status: " + response.statusCode.toString());
         final data = json.decode(response.body);
@@ -22,24 +22,9 @@ class LoginController {
       } else {
         print("Code status: " + response.statusCode.toString());
         return null;
-      }
+      } 
     } catch (e) {
       print("Error catchnya $e");
-      await showDialog(
-        context: context!,
-        builder: (alertDialogContext) {
-          return AlertDialog(
-            title: const Text("Gagal Login"),
-            content: const Text("Akun tidak terdaftar! Silahkan lakukan register"),
-            actions: <Widget>[
-              TextButton(
-                onPressed: () => Navigator.pop(alertDialogContext),
-                child: const Text("OK")
-              )
-            ],
-          );
-        }
-      );
       return null;
     }
   }
@@ -59,12 +44,16 @@ class LoginController {
 
     SharedPreferences pref = await SharedPreferences.getInstance();
     String? val = pref.getString('username');
-     if(val != null) {
+    if(val != null) {
       Navigator.of(context).pushNamedAndRemoveUntil(
         '/homepage',
         (Route<dynamic> r) => false
       );
-     }
+    } else {
+      // var text = 'Username atau Kata Sandi tidak terdaftar';
+      // final snackBar = SnackBar(content: Text(text));
+      // ScaffoldMessenger.of(context).showSnackBar(snackBar);
+    }
   }
 
   // Check if account has logged in before
@@ -141,7 +130,7 @@ class RegisterController {
    
     SharedPreferences pref = await SharedPreferences.getInstance();
     String? val = pref.getString('username');
-     if(val != null) {
+    if (val != null) {
       // Showing popup when register successfull
       await showDialog(
         context: context,
@@ -164,7 +153,11 @@ class RegisterController {
         '/login',
         (Route<dynamic> r) => false
       );
-     }
+    } else {
+      const text = 'Validasi error! Gagal ubah kata sandi';
+      const snackBar = SnackBar(content: Text(text));
+      ScaffoldMessenger.of(context).showSnackBar(snackBar);
+    }
   }
 }
 
@@ -180,35 +173,19 @@ class ForgotPasswordController {
 
   // Code playground
   Future forgotPassword(body) async {
-    try {
-      final response = await http.post(Uri.parse(apiForgotPassword),
-          headers: {"Accept": "application/json"}, body: body);
-      if (response.statusCode == 200) {
-        print("Code status: " + response.statusCode.toString());
-        final data = json.decode(response.body);
-        print(data);
-        return data;
-      } else {
-        await showDialog(
-          context: context!,
-          builder: (alertDialogContext) {
-            return AlertDialog(
-              title: const Text("Gagal Ubah Kata Sandi"),
-              content: const Text("Username atau password salah!"),
-              actions: <Widget>[
-                TextButton(
-                  onPressed: () => Navigator.pop(alertDialogContext),
-                  child: const Text("OK")
-                )
-              ],
-            );
-          }
-        );
-        print("Code status: " + response.statusCode.toString());
-        return null;
-      }
-    } catch (e) {
-      print("Error catchnya $e");
+    final response = await http.post(
+      Uri.parse(apiForgotPassword),
+      headers: {"Accept": "application/json"}, 
+      body: body
+    );
+    
+    if (response.statusCode == 200) {
+      print("Code status: " + response.statusCode.toString());
+      final data = json.decode(response.body);
+      print(data);
+      return data;
+    } else {
+      print("Code status: " + response.statusCode.toString());
       return null;
     }
   }
@@ -226,10 +203,10 @@ class ForgotPasswordController {
     request.answerValidation = answer.text;
     forgotPassword(forgotPasswordModelToJson(request));
 
-    // Showing popup when password change successfull
     SharedPreferences pref = await SharedPreferences.getInstance();
     String? val = pref.getString('username');
-     if(val != null) {
+    if (val != null) {
+      // Showing popups
       await showDialog(
         context: context,
         builder: (alertDialogContext) {
@@ -251,7 +228,11 @@ class ForgotPasswordController {
         '/login',
         (r) => false
       );
-     }
+    } else {
+      const text = 'Validasi error! Gagal ubah kata sandi';
+      const snackBar = SnackBar(content: Text(text));
+      ScaffoldMessenger.of(context).showSnackBar(snackBar);
+    }
   }
 }
 

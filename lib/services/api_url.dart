@@ -3,7 +3,7 @@ part of 'services.dart';
 // Server URL
 const String apiLogin = "http://dozk.tech/testHosting/User_controller/Login.php";
 const String apiRegister = "http://dozk.tech/testHosting/User_controller/Register.php";
-const String apiForgotPassword = "http://dozk.tech/testHosting/User_controller/Forgot_password.php";
+const String apiForgotPassword = "http://dozk.tech/testHosting/User_controller/Forgotpassword.php";
 const String apiGetProfile = "http://dozk.tech/testHosting/User_controller/Profile.php?username=";
 const String apiUpdateProfile = "http://dozk.tech/testHosting/User_controller/Changeprofile.php";
 
